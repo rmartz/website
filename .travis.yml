@@ -1,6 +1,6 @@
 branches:
   only:
-  - develop
+  - master
 deploy:
   provider: s3
   access_key_id:
@@ -8,8 +8,6 @@ deploy:
   secret_access_key:
     secure: Y74dlikAJ7xQaXMOFAq4znP7986YfCsZp3kH/+Rmazur2+AvD401Ei8D4FHg703dsJt/BYNej/NvbW153nVAWxcCtUxEONscCsCsbn92bywcz+F6m7xsudzOHfeV3aAVrAO5UUbNGvUPmiNKDV+nBGGcxLmewZFNX7n4pag+Bd2aSX1qIVt96jZ4L+4DwgcAvYRRgZcyzvByGlWW/GTVAjqvY6gU5LY085gM9VYRkyr1r9SwH2FdYIBj9ugEEAHLRU5z9CyCnV65ZvbSfDBuGaJ7mUNsui0uJ2Mg8Tu+CFRDdbrtlwceakrjmUFtuyfe7tpWMGJLb1k0NPWRqmslU0WFQsT9rj5S0XAUje2c65q2oRIVrWwZAPdSu0ImAIKYmApHhT1HH1vqWMkXFUwda6mXj//XbGPQmawvXEtUWNxGy2e10Gh0r3YMrGntkgFr7BkMchikHRn3tkB5KHnTTKaLaTD80gL+ev92tLv3tIOtsS4llaotXFourkidS/rotMEZ77y+24ArZsvUAXAy6Nok/8FZJIm1wPbgzqNswnrdMuAMppHmU1f8kgfBdsvwoyCMrjWt8VLFBFaK2Wiljt49jdkXMxsMkDTb8aY/+E9uC3Pi9YksR4NSro/eg7W30UijlVnW0qtjWaO+OPBAvwnFyma28XZZ58nsh9M/XOE=
   bucket: reedmartz.com
-  on:
-    branch: develop
 notifications:
   email:
     on_failure: always
