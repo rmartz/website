@@ -19,7 +19,7 @@ class WebsiteStack extends cdk.Stack {
       publicReadAccess: true
     });
 
-    const logs_bucket = new s3.Bucket(this, 'StaticS3Bucket', {
+    const logs_bucket = new s3.Bucket(this, 'LogS3Bucket', {
       bucketName: `${fqdn}-logs`
     });
 
@@ -43,18 +43,6 @@ class WebsiteStack extends cdk.Stack {
             }
           ],
         },
-      ],
-      errorConfigurations: [
-        {
-          errorCode: 404,
-          responseCode: 200,
-          responsePagePath: '/index.html'
-        },
-        {
-          errorCode: 403,
-          responseCode: 200,
-          responsePagePath: '/index.html'
-        }
       ],
       loggingConfig: {
         bucket: logs_bucket,

@@ -1,3 +1,9 @@
 {
-    "app": "node bin/website.js"
+  "app": "node bin/website.js",
+  "context": {
+    "hosted-zone:account=946244784833:domainName=reedmartz.com:region=us-east-1": {
+      "Id": "/hostedzone/Z1E8DJPH8CWDEB",
+      "Name": "reedmartz.com."
+    }
+  }
 }
